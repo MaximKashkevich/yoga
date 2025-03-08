@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Убираем стандартные отступы и границы */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Наследуем шрифты */
+html,
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #fff;
+}
+
+/* Убираем стандартное оформление списка */
+ul,
+ol {
+	list-style: none;
+}
+
+/* Сброс ссылок */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Убираем стандартное оформление кнопок */
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	font: inherit;
+}
+
+/* Убираем outline при фокусе (лучше добавить кастомные стили) */
+button:focus,
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+/* Обнуляем таблицы */
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/* Обнуляем изображения */
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Убираем лишние стили у input и textarea */
+input,
+textarea {
+	border: none;
+	font: inherit;
+}
+
+/* Убираем стрелки у input[type="number"] в Chrome */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Улучшаем рендеринг шрифтов */
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+}
+
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* Растягиваем wrapper на всю высоту экрана */
+}
+
+.main {
+	flex-grow: 1;
+}
+
+[class*='__container'] {
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+.header__number a {
+	color: red;
+}
