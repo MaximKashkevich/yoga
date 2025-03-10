@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<title>yoga</title>
+		<title>Занятия по йоге</title>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
 				<div class="header__container">
 					<a href="#" class="header__logo">Занятия по йоге</a>
-					<nav class="header__menu">
+
+					<nav class="header__menu menu">
 						<ul class="menu__list">
 							<li class="menu__item">
 								<a href="#" class="menu__link">О компании</a>
@@ -30,13 +31,46 @@
 							</li>
 						</ul>
 					</nav>
+
+					<div class="burger">
+						<span></span>
+					</div>
+
 					<div class="header__number">
-						<a href="#"> +7 495 123-45-67 Cлужба продаж </a>
+						<a href="#">+7 495 123-45-67</a>
 					</div>
 				</div>
 			</header>
-			<main class="main">Main</main>
+
+			<main class="main">
+				<section class="training-online">
+					<div class="training-online__container">
+						<div class="training-online__content">
+							<div class="text-block">
+								<h1 class="block-text__title">Обучение йоге в зале и онлайн</h1>
+								<div class="block-text__text">
+									По системе самосовершенствования <br />Фалунь Дафа (Фалуньгун)
+								</div>
+								<a href="#" class="block-text__button button">
+									<span>Подробнее</span>
+									<img src="img/ArrowRight.svg" alt="ArrowRight" />
+								</a>
+								<div class="training-online__href">Занятия по расписанию</div>
+							</div>
+						</div>
+						<div class="training-online__image">
+							<img
+								src="img/training-online__image.svg"
+								alt="training-online__image"
+							/>
+						</div>
+					</div>
+				</section>
+			</main>
+
 			<footer class="footer">Footer</footer>
 		</div>
+
+		<script src="script.js"></script>
 	</body>
 </html>
