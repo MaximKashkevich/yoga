@@ -15,6 +15,7 @@ body {
 	color: #333;
 	background-color: #fff;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 .wrapper {
@@ -402,5 +403,131 @@ body {
 		align-self: center;
 		margin-bottom: 25px;
 		padding: 15px 28px 15px 28px;
+	}
+}
+
+/* video */
+
+.image {
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	display: block;
+	max-width: 1200px; /* Ограничение максимальной ширины */
+	margin: 0 auto; /* Центрирование блока */
+}
+
+.image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover; /* Подгоняет изображение под размеры родителя, сохраняя пропорции */
+	border-radius: 8px; /* Скругление краев (если нужно) */
+}
+
+/* Адаптивность под разные экраны */
+@media (max-width: 1024px) {
+	.image {
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.image {
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.image {
+		padding: 0 10px;
+	}
+}
+
+/* benefit */
+
+.points__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+}
+
+.points-benefit {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.benefit-text-one {
+	color: rgba(140, 108, 191, 1);
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 130%;
+}
+
+.benefit-title {
+	font-size: 64px;
+	line-height: 68px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 1);
+}
+
+.benefit-text-two {
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 130%;
+}
+
+.points {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.points-column {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	text-align: center;
+}
+
+.points-column__text {
+	font-weight: 700;
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.7);
+	line-height: 24px;
+}
+
+.points-column__title {
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 130%;
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+	.points-column__text {
+		font-size: 14px;
+	}
+
+	.points-column__title {
+		font-size: 20px;
+	}
+
+	.benefit-title {
+		font-size: 32px;
+		line-height: 38px;
+	}
+
+	.benefit-text-two {
+		font-size: 18px;
 	}
 }
