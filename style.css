@@ -702,3 +702,469 @@ body {
 		padding: 16px;
 	}
 }
+/* record */
+.record {
+	background-image: url('img/record-image.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Контейнер */
+.record-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1200px;
+	padding: 30px;
+	margin: 0 auto;
+}
+
+/* Левый блок с текстом */
+.record-content {
+	margin-right: 10px;
+	max-width: 550px;
+}
+
+.record-content-title {
+	color: rgba(255, 255, 255, 1);
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 68px;
+}
+
+.record-content-text {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 130%;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* Форма */
+.record-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	max-width: 400px;
+	height: auto;
+	background: #fff;
+	border-radius: 16px;
+	padding: 30px;
+	gap: 8px;
+}
+
+.record-form-title {
+	color: rgba(0, 0, 0, 1);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+	white-space: nowrap;
+}
+
+.record-form-container-inputs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.record-form-input {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	padding: 12px;
+	outline: none;
+	width: 100%;
+}
+
+.record-form-href {
+	padding: 12px 40px;
+	background: rgba(140, 108, 191, 1);
+	border-radius: 6px;
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	transition: background 0.3s;
+}
+
+.record-form-href:hover {
+	background: rgba(120, 92, 168, 1);
+}
+
+.record-form-text {
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+/* --- Адаптивность --- */
+@media (max-width: 1024px) {
+	.record-content-title {
+		font-size: 48px;
+		line-height: 52px;
+	}
+
+	.record-content-text {
+		font-size: 20px;
+	}
+
+	.record-container {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.record-container {
+		flex-direction: column;
+		align-items: center;
+		padding: 15px;
+	}
+
+	.record-content {
+		text-align: center;
+		margin-right: 0;
+		margin-bottom: 15px;
+		max-width: 90%;
+	}
+
+	.record-content-title {
+		font-size: 36px;
+		line-height: 42px;
+	}
+
+	.record-content-text {
+		font-size: 18px;
+	}
+
+	.record-form {
+		width: 85%;
+		padding: 20px;
+		max-width: 350px;
+	}
+}
+
+@media (max-width: 480px) {
+	.record-content-title {
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	.record-content-text {
+		font-size: 16px;
+	}
+
+	.record-form-title {
+		font-size: 16px;
+	}
+
+	.record-form-input {
+		padding: 10px;
+	}
+
+	.record-form-href {
+		padding: 10px 25px;
+	}
+
+	.record-form {
+		width: 90%;
+		padding: 15px;
+	}
+}
+
+/* reviews */
+
+.reviews__container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 40px;
+}
+
+.reviews-content {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.reviews-content-title {
+	color: rgba(0, 0, 0, 1);
+	font-size: 48px;
+	line-height: 52px;
+	font-weight: 700;
+}
+
+.reviews-content-text {
+	font-size: 24px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.4);
+	line-height: 130%;
+}
+
+.reviews-images__container {
+	position: relative;
+	display: inline-block;
+}
+
+.reviews-images {
+	display: flex;
+
+	margin-top: 20px;
+	gap: 64px;
+}
+
+.reviews-images__container img {
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
+
+.reviews-images-block {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border-radius: 12px;
+}
+.reviews-images-block img {
+	position: absolute;
+	width: 104px;
+	height: 104px;
+}
+
+.reviews-images-block-title {
+	position: absolute;
+	bottom: 40px;
+	left: 20px;
+}
+
+.reviews-images-block-text {
+	color: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+	.reviews-images {
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.reviews-images-block img {
+		width: 64px;
+		height: 64px;
+	}
+}
+
+/* comment */
+
+.comment__container {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 32px;
+}
+
+.comment-text {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 120%;
+}
+
+.comment-name {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.comment-profession {
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 16px;
+}
+
+/* start */
+
+.start {
+	background-image: url('img/start.png');
+	background-size: cover; /* Изображение заполняет весь экран */
+	background-position: center;
+	background-repeat: no-repeat; /* Изображение не повторяется */
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+}
+
+.start__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 40px;
+}
+
+.start-content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.start-title {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 52px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.start-text {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.start-input__container {
+	display: flex;
+	text-align: left;
+	flex-direction: column;
+}
+
+.inputs-container {
+	display: flex;
+	gap: 8px;
+	flex-direction: column;
+}
+
+.start-input {
+	padding: 15px 50px 15px 15px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+}
+
+.start-input::placeholder {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.start-input-text {
+	font-size: 18px;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 1);
+	line-height: 24px;
+	margin-top: 10px;
+}
+
+.checkbox__container {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-top: 10px;
+}
+
+.checkbox-block {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.checkbox {
+	appearance: none;
+	width: 24px;
+	height: 24px;
+	background-color: transparent;
+	border: 2px solid rgba(140, 108, 191, 1);
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background-color 0.3s, border-color 0.3s;
+}
+
+.checkbox:checked {
+	background-color: rgba(140, 108, 191, 1);
+	border-color: rgba(140, 108, 191, 1);
+}
+
+.checkbox::before {
+	content: '';
+	width: 8px;
+	height: 8px;
+	background-color: white;
+	border-radius: 50%;
+	transition: transform 0.3s;
+	transform: scale(0);
+}
+
+.checkbox:checked::before {
+	transform: scale(1);
+}
+
+.input-href {
+	color: rgba(255, 255, 255, 1);
+	padding: 10px 50px 10px 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	background-color: rgba(140, 108, 191, 1);
+	border-radius: 6px;
+	margin: 10px 0 10px 0;
+}
+
+.input-text-two {
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+}
+
+.input-text-two span {
+	color: gray;
+	cursor: pointer;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+	.start-title {
+		font-size: 32px;
+		line-height: 38px;
+	}
+
+	.start-text {
+		font-size: 16px;
+	}
+
+	.start-input {
+		padding: 12px;
+	}
+
+	.input-href {
+		padding: 10px 30px;
+	}
+
+	.start {
+		height: auto;
+		padding: 20px;
+	}
+}
